@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcule sua média</title>
+</head>
+
+<body>
+    <div id="bloco">
+        <h1 class="center" id="titulo">Cálculo de média FSA!</h1>
+        <div class="center">
+            <input type="number" id="escreverNota" placeholder="Nota das atividades!">
+            <button id="btnAdd">Adicionar Atividade</button>
+            <button id="btnRemove">Remover Última Nota</button>
+        </div>
+        <div class="center">
+            <select id="array" size="4">
+                <option>Digite um valor para começar</option>
+            </select>
+        </div>
+        <div class="center">
+            <input type="number" id="escreverP1" class="inputP" placeholder="Nota da P1!">
+            <input type="number" id="escreverP2" class="inputP" placeholder="Nota da P2!">
+            <button id="btnP">Adicionar Provas</button>
+        </div>
+        <div ID="respP" class="center"></div>
+        <div id="img " class="center">
+            <img id="gif" src="https://i.pinimg.com/originals/1c/53/3c/1c533c5f6a3486e030c82d8f0664ec71.gif">
+        </div>
+        <div class="center">
+            <button id="calcular">Calcule sua média</button>
+        </div>
+
+        <div id="resp" class="center"></div>
+    </div>
+
+    <script src="media.js"></script>
+</body>
+
+</html>
