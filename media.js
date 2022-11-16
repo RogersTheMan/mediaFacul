@@ -4,10 +4,12 @@ const btnAdd = document.querySelector("#btnAdd");
 const btnRemove = document.querySelector("#btnRemove");
 const btnCalcular = document.querySelector("#calcular");
 const btnRecarregar = document.querySelector("#recarregar");
+const btnMediaAtv = document.querySelector("#mediaAtv");
 const p1 = document.querySelector("#escreverP1");
 const p2 = document.querySelector("#escreverP2");
 const btnP = document.querySelector("#btnP");
 const respProv = document.querySelector("#respP");
+const respAtv = document.querySelector("#respAtv");
 let arr = document.querySelector("select#array");
 const resp = document.querySelector("#resp");
 
@@ -30,6 +32,25 @@ btnAdd.addEventListener("click", function () {
     item.innerHTML = `O número ${notas[c]} foi <b>Adicionado</b>!`;
     arr.appendChild(item);
     resp.innerHTML = "";
+  }
+});
+
+btnMediaAtv.addEventListener("click", function () {
+  if (notas.length === 0) {
+    alert("Digite suas atividades antes de calcular a média!");
+  } else {
+    let soma = 0;
+    let media = 0;
+
+    for (let c in notas) {
+      soma += notas[c];
+      media = soma / notas.length;
+    }
+
+    let mediaAtv = media * 0.2;
+    respAtv.innerHTML = `<h3>A média da suas provas foi de: ${mediaAtv.toFixed(
+      2
+    )}</h3>`;
   }
 });
 
